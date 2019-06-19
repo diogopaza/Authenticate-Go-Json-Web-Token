@@ -21,7 +21,7 @@ type JwtToken struct{
 }
 
 type Exception struct{
-	Message string `json:message`
+	Message string `json:"message"`
 }
 
 func CreateTokenEndpoint(w http.ResponseWriter, req *http.Request){
